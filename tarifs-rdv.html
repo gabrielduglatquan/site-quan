@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs et Rendez-vous - Coach de Vie</title>
+    <!-- On relie cette page au MÊME fichier de design -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU DE NAVIGATION (Identique à l'accueil) -->
+    <header>
+        <div class="logo">Prénom Nom</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="accompagnements.html">Mes accompagnements</a>
+            <a href="formations.html">Formations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="tarifs-rdv.html">Tarifs et rendez-vous</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- SECTION TARIFS -->
+    <section class="hero">
+        <h1>Tarifs et Modalités</h1>
+        <p>Les séances se déroulent en cabinet à [Ville] ou en visioconférence, selon votre préférence.</p>
+        
+        <div class="grille-3">
+            <div class="carte" style="text-align: center;">
+                <h3>Séance Individuelle</h3>
+                <p>Kinésiologie, Coaching ou Hypnose</p>
+                <p style="font-size: 2rem; color: var(--orange-terracotta); font-weight: bold; margin: 10px 0;">60 €</p>
+                <p>Durée : 1h à 1h15</p>
+            </div>
+            
+            <div class="carte" style="text-align: center;">
+                <h3>Séance Découverte</h3>
+                <p>Un premier échange pour faire le point</p>
+                <p style="font-size: 2rem; color: var(--orange-terracotta); font-weight: bold; margin: 10px 0;">Gratuit</p>
+                <p>Durée : 30 min (Téléphone ou Visio)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CALENDRIER (POUR CALENDLY) -->
+    <div class="fond-alterne">
+        <section style="text-align: center;">
+            <h2>Prendre un rendez-vous</h2>
+            <p>Choisissez le créneau qui vous convient le mieux directement dans l'agenda ci-dessous.</p>
+            
+            <!-- C'est ici que nous collerons le code fourni par Calendly -->
+            <div style="background-color: white; padding: 50px; border-radius: 10px; border: 2px dashed var(--orange-terracotta); margin-top: 30px;">
+                <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/gab354739/seance-individuelle" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

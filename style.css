@@ -148,3 +148,21 @@ section {
 .menu-deroulant:hover .sous-menu {
     display: block;
 }
+/* --- PIED DE PAGE (FOOTER) --- */
+footer {
+    background-color: var(--rouge-sombre);
+    color: white;
+    text-align: center;
+    padding: 25px 5%;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--orange-vif);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
+}

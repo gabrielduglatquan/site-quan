@@ -112,3 +112,39 @@ section {
     nav { justify-content: center; margin-top: 15px; }
     .hero h1 { font-size: 2rem; }
 }
+/* --- MENU DÉROULANT --- */
+.menu-deroulant {
+    position: relative;
+    display: inline-block;
+}
+
+.sous-menu {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    background-color: var(--rouge-sombre);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+}
+
+.sous-menu a {
+    color: white;
+    padding: 8px 15px;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.sous-menu a:hover {
+    background-color: var(--orange-vif);
+    color: white;
+}
+
+/* Afficher le menu au survol de la souris */
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}

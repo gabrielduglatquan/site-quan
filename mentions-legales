@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - SamSara'h Développement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU DE NAVIGATION -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="SamSara'h' Développement" style="height: 50px; vertical-align: middle;">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="accompagnements.html">Mes accompagnements</a>
+            <a href="formations.html">Formations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="tarifs-rdv.html">Tarifs et rendez-vous</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTENU DES MENTIONS LÉGALES -->
+    <section class="hero" style="padding: 40px 5%;">
+        <h1>Mentions Légales</h1>
+    </section>
+
+    <div class="fond-alterne">
+        <section style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+            <h2>1. Informations légales</h2>
+            <p>Conformément aux dispositions de la loi pour la confiance dans l'économie numérique, voici les informations de l'éditeur du site :</p>
+            <p><strong>Nom de l'entreprise :</strong> SamSara'h Développement<br>
+            <strong>Responsable de la publication :</strong> [Nom et Prénom de ta mère]<br>
+            <strong>Adresse du cabinet :</strong> [Adresse complète]<br>
+            <strong>Téléphone :</strong> [Numéro de téléphone]<br>
+            <strong>E-mail :</strong> [Adresse email]</p>
+
+            <h2 style="margin-top: 30px;">2. Hébergement</h2>
+            <p>Le site est hébergé par :<br>
+            <strong>GitHub Inc.</strong><br>
+            88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis<br>
+            Site web : https://pages.github.com</p>
+
+            <h2 style="margin-top: 30px;">3. Propriété intellectuelle</h2>
+            <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques (logos, visuels).</p>
+
+            <h2 style="margin-top: 30px;">4. Données personnelles</h2>
+            <p>Les informations recueillies via le formulaire de prise de rendez-vous (Calendly) ou les contacts téléphoniques/e-mails sont destinées exclusivement à la gestion des rendez-vous et des accompagnements de SamSara'h Développement. Aucune donnée n'est cédée à des tiers.</p>
+        </section>
+    </div>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>© 2026 SamSara'h Développement - Tous droits réservés | <a href="mentions-legales.html">Mentions légales</a></p>
+        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 5px;">Site web conçu et développé avec passion</p>
+    </footer>
+
+</body>
+</html>

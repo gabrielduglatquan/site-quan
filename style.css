@@ -226,7 +226,7 @@ footer a:hover {
 
 }
 
-/* 6. Le bouclier central pour protéger le phénix (NOUVEAU) */
+/* Le bouclier central pour protéger le phénix */
 .roue-centre {
     position: absolute;
     top: 0;
@@ -238,12 +238,12 @@ footer a:hover {
     background-position: center;
     border-radius: 50%;
     
-    /* Découpe un cercle parfait au centre (le cercle blanc du phénix) */
-    clip-path: circle(27% at 50% 50%);
+    /* On agrandit le bouclier à 31% pour bien cacher les parts qui grossissent en dessous */
+    clip-path: circle(31% at 50% 50%);
     
-    /* Reste toujours au-dessus des parts qui grossissent */
-    z-index: 30;
+    /* On force pour qu'il soit absolument toujours au-dessus */
+    z-index: 999; 
     
-    /* Essentiel : laisse passer les clics à travers le bouclier vers les liens en dessous */
+    /* Indispensable pour que la souris passe à travers */
     pointer-events: none;
 }

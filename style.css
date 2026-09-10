@@ -1,10 +1,16 @@
 /* --- PALETTE DE COULEURS --- */
+/* --- CHARTE GRAPHIQUE SAMBARA'H DÉVELOPPEMENT --- */
 :root {
-    --fond-clair: #FDFBF7;
-    --texte-principal: #333333;
-    --rouge-sombre: #7A2021; 
-    --orange-terracotta: #ED7E5C; /* Ta nouvelle couleur ! */
-    --fond-section: #F3EAE3; 
+    --fond-clair: #FDFBF7;        /* Blanc cassé chaleureux */
+    --texte-principal: #2C2C2C;   /* Gris foncé très lisible */
+    
+    /* Couleurs issues de vos logos */
+    --rouge-sombre: #C84B31;      /* Rouge/Orange brique (Le rouge du phénix) */
+    --orange-vif: #ED7E5C;        /* L'orangé chaleureux principal */
+    --vert-menthe: #2A9D8F;       /* Vert émeraude/menthe (Infirmière/Addictologie) */
+    --vert-clair: #629460;        /* Vert doux (Coaching) */
+    
+    --fond-section: #F4EFEB;      /* Beige léger pour alterner les blocs */
 }
 
 /* --- BASE --- */

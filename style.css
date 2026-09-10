@@ -29,32 +29,39 @@ a { text-decoration: none; }
 /* --- BOUTONS --- */
 .btn-primaire {
     display: inline-block;
-    background-color: var(--orange-terracotta);
+    background-color: var(--rouge-sombre); /* On utilise le rouge sombre pour un fort contraste */
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px; /* Un tout petit peu plus grand pour attirer le regard */
     border-radius: 8px;
     font-weight: bold;
-    transition: background 0.3s;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Une ombre portée pour le faire "ressortir" du fond */
+    transition: all 0.3s ease;
     margin: 5px;
 }
+
 .btn-primaire:hover {
-    background-color: #D66A48; /* Un peu plus foncé au survol */
+    background-color: var(--orange-vif); /* Au survol, il devient lumineux avec ton bel orangé */
+    transform: translateY(-2px); /* Il fait un petit effet "saut" vers le haut très élégant */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .btn-secondaire {
     display: inline-block;
     background-color: transparent;
     color: var(--rouge-sombre);
-    padding: 10px 22px;
+    padding: 12px 24px;
     border: 2px solid var(--rouge-sombre);
     border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     margin: 5px;
 }
+
 .btn-secondaire:hover {
     background-color: var(--rouge-sombre);
     color: white;
+    transform: translateY(-2px);
 }
 
 /* --- EN-TÊTE / MENU --- */

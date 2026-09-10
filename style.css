@@ -223,3 +223,27 @@ footer a:hover {
 .tranche-perso      { clip-path: polygon(50% 50%, 79% 100%, 21% 100%); }
 .tranche-hypnose    { clip-path: polygon(50% 50%, 21% 100%, 0% 100%, 0% 50%); }
 .tranche-formatrice { clip-path: polygon(50% 50%, 0% 50%, 0% 0%, 21% 0%); }
+
+}
+
+/* 6. Le bouclier central pour protéger le phénix (NOUVEAU) */
+.roue-centre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('infologo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
+    /* Découpe un cercle parfait au centre (le cercle blanc du phénix) */
+    clip-path: circle(27% at 50% 50%);
+    
+    /* Reste toujours au-dessus des parts qui grossissent */
+    z-index: 30;
+    
+    /* Essentiel : laisse passer les clics à travers le bouclier vers les liens en dessous */
+    pointer-events: none;
+}

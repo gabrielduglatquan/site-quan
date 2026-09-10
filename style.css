@@ -166,42 +166,60 @@ footer a {
 footer a:hover {
     color: white;
 }
-/* --- EFFET SURVOL ROUE DES COMPÉTENCES --- */
-.conteneur-roue {
+/* ========================================= */
+/*   ROUE DES COMPÉTENCES (ZOOM FLUIDE)      */
+/* ========================================= */
+
+/* 1. Le conteneur principal */
+.roue-magique {
     position: relative;
-    display: inline-block;
-    max-width: 500px;
+    width: 450px;
+    height: 450px;
+    max-width: 90vw; /* S'adapte parfaitement sur téléphone */
+    max-height: 90vw;
     margin: 40px auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.conteneur-roue img {
+/* 2. L'image de fond (Reste fixe pour éviter les trous) */
+.roue-base {
+    position: absolute;
     width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    height: 100%;
+    background-image: url('infologo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
-/* Les zones cliquables transparentes qui s'illuminent au survol */
-.zone-cliquable {
+/* 3. Les parts de la roue (Interactives) */
+.part-roue {
     position: absolute;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0); /* Invisible par défaut */
-}
-
-.zone-cliquable:hover {
-    background-color: rgba(255, 255, 255, 0.25); /* Effet lumineux blanc transparent */
-    transform: scale(1.03); /* Petit effet de zoom sur la zone */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    z-index: 10;
-}
-.zone-zoom {
-    position: absolute;
-    transition: transform 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('infologo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    /* Transition ultra fluide avec un léger effet d'amorti (rebond) */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
     cursor: pointer;
 }
 
-.zone-zoom:hover {
-    transform: scale(1.08); /* Effet de zoom net */
-    z-index: 10;
+/* 4. L'effet de zoom visuel */
+.part-roue:hover {
+    transform: scale(1.12); /* La part grossit de 12% */
+    z-index: 10; /* Elle passe au-dessus des autres */
+    filter: brightness(1.08); /* Elle s'illumine très légèrement */
 }
+
+/* 5. Le découpage mathématique précis des 6 parts (Ne pas modifier) */
+.tranche-kine       { clip-path: polygon(50% 50%, 21% 0%, 79% 0%); }
+.tranche-infirmiere { clip-path: polygon(50% 50%, 79% 0%, 100% 0%, 100% 50%); }
+.tranche-scolaire   { clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 79% 100%); }
+.tranche-perso      { clip-path: polygon(50% 50%, 79% 100%, 21% 100%); }
+.tranche-hypnose    { clip-path: polygon(50% 50%, 21% 100%, 0% 100%, 0% 50%); }
+.tranche-formatrice { clip-path: polygon(50% 50%, 0% 50%, 0% 0%, 21% 0%); }

@@ -195,3 +195,13 @@ footer a:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
     z-index: 10;
 }
+.zone-zoom {
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zone-zoom:hover {
+    transform: scale(1.08); /* Effet de zoom net */
+    z-index: 10;
+}

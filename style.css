@@ -166,3 +166,32 @@ footer a {
 footer a:hover {
     color: white;
 }
+/* --- EFFET SURVOL ROUE DES COMPÉTENCES --- */
+.conteneur-roue {
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.conteneur-roue img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Les zones cliquables transparentes qui s'illuminent au survol */
+.zone-cliquable {
+    position: absolute;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0); /* Invisible par défaut */
+}
+
+.zone-cliquable:hover {
+    background-color: rgba(255, 255, 255, 0.25); /* Effet lumineux blanc transparent */
+    transform: scale(1.03); /* Petit effet de zoom sur la zone */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    z-index: 10;
+}

@@ -77,7 +77,7 @@ header {
 }
 nav { display: flex; flex-wrap: wrap; gap: 15px; }
 nav a { color: white; font-size: 0.95rem; transition: color 0.3s; }
-nav a:hover { color: var(--orange-terracotta); }
+nav a:hover { color: var(--terre-cuite); }
 
 /* --- SECTIONS GLOBALES --- */
 section {
@@ -104,7 +104,7 @@ section {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-top: 4px solid var(--orange-terracotta);
+    border-top: 4px solid var(--terre-cuite);
 }
 
 /* --- ADAPTATION MOBILE --- */

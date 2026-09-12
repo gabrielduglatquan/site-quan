@@ -36,7 +36,7 @@ a { text-decoration: none; }
 }
 
 .btn-primaire:hover {
-    background-color: var(--orange-vif); /* Au survol, il devient lumineux avec ton bel orangé */
+    background-color: var(--terre-cuite); /* Au survol, il devient lumineux avec ton bel orangé */
     transform: translateY(-2px); /* Il fait un petit effet "saut" vers le haut très élégant */
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
@@ -79,7 +79,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
-.fond-alterne { background-color: var(--fond-section); max-width: 100%; }
+.--fond-clair { background-color: var(--fond-clair); max-width: 100%; }
 
 /* --- BANDEAU PRINCIPAL (HERO) --- */
 .hero { text-align: center; padding: 80px 5%; }
@@ -135,7 +135,7 @@ section {
 }
 
 .sous-menu a:hover {
-    background-color: var(--orange-vif);
+    background-color: var(--terre-cuite);
     color: white;
 }
 
@@ -154,7 +154,7 @@ footer {
 }
 
 footer a {
-    color: var(--orange-vif);
+    color: var(--terre-cuite);
     text-decoration: underline;
 }
 

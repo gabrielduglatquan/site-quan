@@ -1,16 +1,11 @@
 /* --- PALETTE DE COULEURS --- */
 /* --- CHARTE GRAPHIQUE SAMBARA'H DÉVELOPPEMENT --- */
+/* --- VARIABLES DE COULEURS (Nouvelle Charte) --- */
 :root {
-    --fond-clair: #FDFBF7;        /* Blanc cassé chaleureux */
-    --texte-principal: #2C2C2C;   /* Gris foncé très lisible */
-    
-    /* Couleurs issues de vos logos */
-    --rouge-sombre: #C84B31;      /* Rouge/Orange brique (Le rouge du phénix) */
-    --orange-vif: #ED7E5C;        /* L'orangé chaleureux principal */
-    --vert-menthe: #2A9D8F;       /* Vert émeraude/menthe (Infirmière/Addictologie) */
-    --vert-clair: #629460;        /* Vert doux (Coaching) */
-    
-    --fond-section: #F4EFEB;      /* Beige léger pour alterner les blocs */
+    --vert-sauge: #36665a;    /* Vert profond du corps de l'oiseau */
+    --terre-cuite: #b96c55;   /* Couleur cuivrée de l'aile */
+    --fond-clair: #f4f6f5;    /* Un blanc très légèrement teinté de vert pour adoucir */
+    --texte-principal: #2d3b37; /* Un gris-vert très foncé pour un texte plus doux que le noir pur */
 }
 
 /* --- BASE --- */

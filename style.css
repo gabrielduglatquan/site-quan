@@ -18,13 +18,13 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 { color: var(--rouge-sombre); margin-bottom: 1rem; }
+h1, h2, h3 { color: var(--vert-sauge); margin-bottom: 1rem; }
 a { text-decoration: none; }
 
 /* --- BOUTONS --- */
 .btn-primaire {
     display: inline-block;
-    background-color: var(--rouge-sombre); /* On utilise le rouge sombre pour un fort contraste */
+    background-color: var(--vert-sauge); /* On utilise le rouge sombre pour un fort contraste */
     color: white;
     padding: 14px 28px; /* Un tout petit peu plus grand pour attirer le regard */
     border-radius: 8px;
@@ -44,9 +44,9 @@ a { text-decoration: none; }
 .btn-secondaire {
     display: inline-block;
     background-color: transparent;
-    color: var(--rouge-sombre);
+    color: var(--vert-sauge);
     padding: 12px 24px;
-    border: 2px solid var(--rouge-sombre);
+    border: 2px solid var(--vert-sauge);
     border-radius: 8px;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -54,14 +54,14 @@ a { text-decoration: none; }
 }
 
 .btn-secondaire:hover {
-    background-color: var(--rouge-sombre);
+    background-color: var(--vert-sauge);
     color: white;
     transform: translateY(-2px);
 }
 
 /* --- EN-TÊTE / MENU --- */
 header {
-    background-color: var(--rouge-sombre);
+    background-color: var(--vert-sauge);
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ section {
 .sous-menu {
     display: none; /* Caché par défaut */
     position: absolute;
-    background-color: var(--rouge-sombre);
+    background-color: var(--vert-sauge);
     min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     border-radius: 6px;
@@ -145,7 +145,7 @@ section {
 }
 /* --- PIED DE PAGE (FOOTER) --- */
 footer {
-    background-color: var(--rouge-sombre);
+    background-color: var(--vert-sauge);
     color: white;
     text-align: center;
     padding: 25px 5%;

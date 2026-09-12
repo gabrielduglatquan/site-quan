@@ -215,3 +215,11 @@ footer a:hover {
     z-index: 50; 
     pointer-events: none; /* Laisse passer la souris au travers */
 }
+
+.logo img {
+    background-color: white; /* Crée un fond blanc */
+    padding: 8px; /* Laisse l'oiseau respirer un peu à l'intérieur de sa bulle */
+    border-radius: 50%; /* Rend le fond parfaitement rond */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Petite ombre pour le faire ressortir */
+    height: 60px; /* Assure-toi que la taille te convient */
+}
